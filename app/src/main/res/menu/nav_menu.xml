@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="News">
+        <menu>
+            <item
+                android:id="@+id/news"
+                android:title="Latest News"
+                android:icon="@drawable/news"></item>
+        </menu>
+    </item>
+    <item android:title="General">
+        <menu>
+            <item
+                android:id="@+id/report"
+                android:title="Report"
+                android:icon="@drawable/report"></item>
+            <item
+                android:id="@+id/donate"
+                android:title="Donate"
+                android:icon="@drawable/donation"></item>
+            <item
+                android:id="@+id/profile"
+                android:title="Profile"
+                android:icon="@drawable/profile"></item>
+        </menu>
+    </item>
+    <item android:title="History">
+        <menu>
+            <item
+                android:id="@+id/reportHistory"
+                android:title="Report History"
+                android:icon="@drawable/history"></item>
+            <item
+                android:id="@+id/paymentHistory"
+                android:title="Payment History"
+                android:icon="@drawable/history"></item>
+        </menu>
+    </item>
+    <item android:title="Logout">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                android:icon="@drawable/logout"></item>
+        </menu>
+    </item>
+    <item android:title="Support">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:title="Share App"
+                android:icon="@drawable/share"></item>
+            <item
+                android:id="@+id/rate"
+                android:title="Rate App"
+                android:icon="@drawable/rate"></item>
+            <item
+                android:id="@+id/bug"
+                android:title="Report Bug"
+                android:icon="@drawable/bug"></item>
+        </menu>
+    </item>
+</menu>

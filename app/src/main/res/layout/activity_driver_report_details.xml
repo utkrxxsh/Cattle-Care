@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driverReportDetails">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="#0E2433"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="35dp"
+        app:srcCompat="@drawable/navigate"
+        tools:layout_editor_absoluteX="335dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/logoone"
+                android:scaleType="fitXY"
+                android:id="@+id/ReportImage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status : In progress"
+                android:textColor="#228C22"
+                android:drawableStart="@drawable/hourglass"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"/>
+
+                <Button
+                    android:id="@+id/contact"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="35"
+                    android:background="@drawable/driver_fill_button"
+                    android:drawableEnd="@drawable/phone"
+                    android:paddingEnd="10dp"
+                    android:text="CONTACT"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"/>
+
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="35"
+                    android:background="@drawable/driver_fill_button"
+                    android:drawableEnd="@drawable/delete"
+                    android:paddingEnd="10dp"
+                    android:text="COMPLETED"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="13dp" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#555555"
+                android:text="Name of User"
+                android:textSize="20dp"
+                android:drawableStart="@drawable/profile"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="Username"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/Username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#555555"
+                android:text="Contact Number"
+                android:textSize="20dp"
+                android:drawableStart="@drawable/phone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="UserPhone"
+                android:textColor="#000"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/Userphone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#555555"
+                android:text="Location"
+                android:textSize="20dp"
+                android:drawableStart="@drawable/location"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="UserLocation"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/LocationUser"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#555555"
+                android:text="Description"
+                android:textSize="20dp"
+                android:drawableStart="@drawable/description"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Description"
+                android:textColor="#000"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/UserDescription"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#555555"
+                android:text="Number of Cattles"
+                android:textSize="20dp"
+                android:drawableStart="@drawable/number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:text="Number of Cattles"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/UserNumber"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#555555"
+                android:text="Timetstamp"
+                android:textSize="20dp"
+                android:drawableStart="@drawable/time"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Timestamp"
+                android:textColor="#000"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/UserdateNTime"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

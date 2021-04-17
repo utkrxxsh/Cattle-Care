@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#FFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+                app:title="CATTLE CARE"
+                app:titleMarginStart="5dp"
+                app:titleTextColor="#000"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewMainPage"
+                android:layout_width="match_parent"
+                android:layout_height="1100dp"
+                android:background="@drawable/bg"
+                android:paddingBottom="30dp" />
+
+            <LinearLayout
+                android:id="@+id/lineartwo"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:background="@drawable/bg"
+                android:orientation="vertical">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+                <Button
+                    android:id="@+id/call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="CALL HELPLINE"
+                    android:background="@drawable/paddle_button"
+                    android:textColor="#000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#f4c2c2">
+
+                    <TextView
+                        android:id="@+id/cattleCaught"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="--"
+                        android:textAlignment="center"
+                        android:paddingTop="30dp"
+                        android:paddingLeft="30dp"
+                        android:textColor="#000"
+                        android:textSize="50sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Cattles Caught Till now.."
+                        android:textSize="18dp"
+                        android:textColor="#000"
+                        android:paddingTop="40dp"
+                        android:paddingLeft="20dp"
+                        android:paddingEnd="20dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#f4c2c2"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:id="@+id/userReg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="--"
+                        android:textAlignment="center"
+                        android:paddingTop="30dp"
+                        android:paddingLeft="30dp"
+                        android:textColor="#000"
+                        android:textSize="50sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Users Registered Till now.."
+                        android:textSize="18dp"
+                        android:textColor="#000"
+                        android:paddingTop="40dp"
+                        android:paddingLeft="20dp"
+                        android:paddingEnd="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

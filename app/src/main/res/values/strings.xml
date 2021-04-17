@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cattle Care</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+    <string name="api_key">AIzaSyBdlN1fha4T808fhoZai4_Cvs50-el8WOk</string>
+    <string name="title_activity_user_maps">Map</string>
+    <string name="checkbox_text">By clicking this you agree to share your current location with Cattle Care for this instant.Only the drivers can access your location. </string>
+    <string name="back_button_text"> Back to Home </string>
+    <string name="title_activity_driver_maps">Map</string>
+    <string name="title_activity_navigate">Map</string>
+    <string name="access_token">pk.eyJ1IjoidXRrcnh4c2giLCJhIjoiY2tjeWVlYTZzMDh6bDMxbDdpcWlicDF3dCJ9.iTN7_xjxxUZJvEfuJ8KceA</string>
+</resources>

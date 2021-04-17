@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cattle_care.cattlecare">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".sliderActivity" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".navigateActivity" />
+        <activity
+            android:name=".paymentHistory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".thankYouDonation" />
+        <activity android:name=".razorPay" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_BdfHkUvKY53kqT" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key" />
+
+        <activity android:name=".driverReportDetails" />
+        <activity
+            android:name=".driverMapsActivity"
+            android:label="@string/title_activity_driver_maps"
+            android:theme="@style/AppTheme.White"/>
+        <activity
+            android:name=".driverCompletedReports"
+            android:theme="@style/AppTheme.White" />
+        <activity
+            android:name=".driverReports"
+            android:theme="@style/AppTheme.White" />
+        <activity android:name=".resetPassword" />
+        <activity
+            android:name=".driverProfile"
+            android:theme="@style/AppTheme.White" />
+        <activity android:name=".signUpPage" />
+        <activity android:name=".loginPage" />
+        <activity
+            android:name=".userReportHistory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ThankYouPage" />
+        <activity android:name=".userForm" />
+        <activity
+            android:name=".userMaps"
+            android:label="@string/title_activity_user_maps" />
+        <activity
+            android:name=".MainPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserProfile"
+            android:theme="@style/AppTheme.Dark" />
+        <activity android:name=".AddDetails" />
+        <activity android:name=".PhoneAuth" />
+        <activity android:name=".UserType" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".Detailed" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.cattle_care.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
